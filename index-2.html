@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beesclozet | Exquisite Fine Jewelry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7317cf",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191121",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2">
+    <img src="logo.png" alt="Logo" class="w-20 sm:w-24 md:w-28 lg:w-32 h-auto">
+</div>
+
+<nav class="hidden lg:flex items-center gap-8">
+<a href="index-2.html" class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a href="shop.html" class="text-sm font-semibold hover:text-primary transition-colors" href="#">Shop</a>
+<div class="relative group">
+<button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors">
+                    Categories
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-primary/10 overflow-hidden py-2">
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Anklets</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Bangles</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Bracelets</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Branded Jewelry</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Jewelry Set</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Pendants</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Rings</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Waist Chains</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Wristwatches</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="all-categories.html">Go to Categories Page</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="flex items-center gap-4 flex-1 justify-end">
+<div class="flex items-center gap-2">
+<div class="relative w-full max-w-xs hidden lg:block">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+<span class="material-symbols-outlined text-sm">search</span>
+</span>
+<input class="block w-full pl-10 pr-3 py-2 border-none bg-primary/5 rounded-lg text-sm placeholder-slate-400 focus:ring-2 focus:ring-primary" placeholder="Search collection..." type="text"/>
+</div>
+<button class="lg:hidden p-2 hover:bg-primary/10 rounded-full transition-colors flex items-center justify-center" id="mobile-search-trigger">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<div class="relative group">
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</button>
+<div class="absolute right-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-primary/10 overflow-hidden py-2"><a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="auth.html">
+<span class="material-symbols-outlined text-lg">login</span>
+                Login
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="auth.html">
+<span class="material-symbols-outlined text-lg">person_add</span>
+                Create Account
+            </a>
+<div class="h-px bg-primary/10 my-1"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">person</span>
+                My Account
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                Orders
+            </a>
+<div class="h-px bg-primary/10 my-1"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors" href="order.html">
+<span class="material-symbols-outlined text-lg">logout</span>
+                Logout
+            </a>
+</div>
+</div>
+</div><div class="flex items-center gap-2">
+<a href="cart.html" class="p-2 hover:bg-primary/10 rounded-full transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</a>
+<button class="lg:hidden p-2 hover:bg-primary/10 rounded-full transition-colors" id="mobile-menu-button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</div><div class="lg:hidden hidden border-t border-primary/10 bg-white dark:bg-background-dark py-4" id="mobile-menu">
+<nav class="flex flex-col px-4 space-y-4">
+<a class="text-base font-semibold text-slate-900 dark:text-slate-100" href="index-2.html">Home</a>
+<a class="text-base font-semibold text-slate-900 dark:text-slate-100" href="shop.html">Shop</a>
+<div class="pt-2">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Categories</p>
+<div class="grid grid-cols-2 gap-2">
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Anklets</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Bangles</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Bracelets</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Branded</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Jewelry Set</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Pendants</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Rings</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Wristwatches</a>
+</div>
+</div>
+
+
+
+</div></nav>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 items-center lg:gap-12 gap-16">
+<div class="relative z-10">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/10 text-primary rounded-full">New Season Collection</span>
+<h1 class="lg:text-7xl font-extrabold text-slate-900 dark:text-slate-100 leading-[1.1] mb-6 text-4xl">Beautiful Jewelry <br class="hidden sm:block"/> <span class="text-primary">for Every Moment.</span></h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-lg">
+                            Explore our stylish jewelry collection for men and women, designed to bring elegance, confidence, and modern fashion to every look.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="shop.html" class="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                                Shop Collection
+</a>
+<a href="all-categories.html" class="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-bold rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 transition-all">
+                                Product Category
+</a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Elegant woman wearing diamond necklace and earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfqo72Qh1nHxJK4RG9eDRcD7wJttHjHv6EOwNbiLRv9t_GQDCn1JYYM02Y76DOHM9TQZCsizZ5IUFawruGLaWBLDkHbRQ_jGmrf0gvgRo3IGnnvXjA34bI_ES4Zhos523xtq5tC9gh0P-OCfsZqhzTVSnMO8Rp8woX9-OnjWSBx11XAXebcz7jxy287Wo1OEQRIuoVQvoWAfFwu0lfJxDruqy4DEVoWUhxuGz4njXNC56l1AkK7CnMcfV6DHjs2m0xISubvJkYSUk"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
+<div class="flex items-center gap-4 mb-2">
+<div class="flex -space-x-2">
+<img class="w-8 h-8 rounded-full border-2 border-white" data-alt="Customer avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9QjzZjSoejT8dsAJJfG1XzRwkm2_LQZYggn9nTuxTfRy7fxNRAnTVReUGFdUjp7d5dpmGwii1GkcEaeQl3fIwT070iBinS_OZfPNVDT9ieVSzFs0UBLQwDKXJRK2DLEt6pw0-YADcix1OuECobyg9RticDDnobriPBPhvPIEVVfmaiUypISjF7M6CI62b9FuAN_IiZepkuHixb4zbhh71mgnF2aJgerGW2geq9EnAV15dSjq7yKu1Mj9MNkN9aqznpQDf2gmuxkQ"/>
+<img class="w-8 h-8 rounded-full border-2 border-white" data-alt="Customer avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKxKWxPI9Y8VQsWjcd6qFLub4sodhORsUXGjDljdrqJG4QlidpXDUXuDg7TdFza4y3PamioQMSUnIw7k7xefZB9ncz_bYXm8soAK-pAbObhVi9y-Ve3ATz3q4KpiYMAnNNiF99GyYE8DYj0wUj3HBdTe7Vr_3O9_6acty26IPwsUrpj-HbI67Oc-dQt-ZnLcLOBtSa9oTl9vHdN0QqnAtMnDpZw4W9MiuWZVQkaV5EVDiChuV5oisSprzJQ8NGgU3bP06zGUtyKjw"/>
+</div>
+<p class="text-xs font-bold text-slate-900 dark:text-slate-100">Joined by 2k+ collectors</p>
+</div>
+<p class="text-xs text-slate-500">The most exquisite collection I've ever seen. Pure craftsmanship.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Grid -->
+<section class="py-20 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-4">Shop by Category</h2>
+<p class="text-slate-500 max-w-2xl mx-auto">Explore our diverse range of handcrafted pieces, from subtle accents to statement jewelry.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<!-- Category Card Item -->
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Gold and diamond anklets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIWPEo1WjduSbxnGEbqrj04l9e78ZUd7cpYhat2kOc22gNbfAO6VHBscrmh0u9eKaOfetTKPjm7muPDhakdvPI5wr0am_mUExRJb6sQ4tVlM5QPzgHwWjHuSOac2n350P7nGY_vGpSSlvyXC360hOuWbRPpb-_Gk-KXBROIozRXxVoO_uHN2VHF5mCcaGFwW4Ei1mvuI_Ek8YfoimIn1yWYQv8KJDQBwZoYIco3IslUN4Dl_qFyLGBd0eqzhB-VM3kpxFo3aLJsxQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Anklets</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Stacked gold bangles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLyCIVLMUhy-Y-kx6ByFTJDqzNogLxj-jks9hSGD7nEe2ub5FZtj-_HQJUJgOVTb_wFIJPcMY6sgW1T4zTYG3puzvQ0JJSoBNYrQIbcsn_yhLT9Y6b0R_ESmFC4RgM1Zm1Ss2Kh6yGzkZgeuLiQjmJvDpP9rae2TmCaf8CeHg7gihwbno6BLj5aNilYcXXu80DN2QiUHC8qS_f4dsbkDeT6bpZxJg8idcIGet7EBAvyf2bB5uBJj3W-wuE2kuFzf95S9bXV6cd938"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Bangles</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Diamond tennis bracelet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuJJNvAI8I7J4nfNyUVV_Nh8TwZxaA6Z13TNLZEpbwB-kxiYHqGhQJfTnoYlp1aen9S-LtpKkriYZfMD6LxRpKWzvOGPQsRMcmqsFCNtxaIWHfSchHS9uO99YQt73R-qmBWKU19vVKksl0-cvN0wa1OGorh3ysxif8aopMXUbtIW91dyKJ3lO_eDMU38Q9oRuOq1cWDF14QN7f2o6fUNySG_Sn4lEX15FIuorWeGCMLXVQM9W9Of0KSK3ajo5zDfDcF74AIidJyqo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Bracelets</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Designer luxury jewelry piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp4hfmCHHVJ9XoLAch_jfrIGPPYIs2r_5da1s4OqdUif3iaIaAtn5S8JzYSxkzAOHtIQD7yDfTvNiTzw6IkEEZnEnnReZFaQFXHvpBHa_zccnHYT3eJ3c9Ib30nPQwnVy1F0eoGdB_3Qo1QBHgx8wyWg42liVdUFpu3HpwD6KtrVN9pBLMqVx3aIAbnx41aS_GPVWEQCYSmS-fz9l9s2IyBbR7COTjAaRFBYGMhShnt1PAUgV6XDJWd4dWtViHQ60mgs8X84kbKkw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Branded Jewelry</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Full jewelry matching set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4mHBRt4prcg9idtCv_ck1lzxTL4qMvDZmfsUMUHXl-5t7GL4cDQCd06R7X8fELLMGxPal2si7aShkt-5JXBp-HYomyvdRBbhO-mwatA-K8zjDg5Au3ebb-nc72iQp6MO2QEP3X5TzVOQjsDePVWho6KRpFyEX77tO1CzLGwd0KuV_kASxkdwH4A1OxFvCCh6Nyy4ykVpBDCXiWNAJUbcXwVhBjeOzgfefeovak4_1GOzw-qXCQ3Wk4WD_66hGe7uKHh2wFrPTV9Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Jewelry Set</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist gold pendant necklace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmnh8R86dHdq5pv0nb8OhFaCLtt_B04MA6xTUJy7a0i72twZrl9ZViDz6KkpK_aF3OOpDgtKsw6AWwcCYVIIyf0xf6BOKjTvZkGmOe_Gb2ca25qNeDz-DDsza2HHv_n_SGjwBY2KZxPE-5aGuUBUcaELfJVItG60AI9TTH5iC6MxCZCQ3rrau1yla1fybmwbDwBS4DzCA68bC8WnhyfLM1DJI06Z2hFYfHiYBQb4IEHdJ0y5F4I0l8Ad8hpedOnNakE_wwrbhXgHk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Pendants</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Diamond engagement ring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1XEGohzKGshKloiV8-6gldSKOBB9BrouVTTIS-GfHginJvwzsrW5T97BakvXMCVY4vxfbstqJla3BCElWgUZk8hr7PAB09YIel6gZGpvsw6k9w3nP9H8ecDZsp5O5f4OIfuFw1Vb1gytG-4vB4XGRfqWU_FJfihLLaUZpx-mqPRGXcpFLZ0dwkEcrYLAJVlqsna_FW6RNZd3xKE5Msk0jVok68SmDByiW5VYC_Msl7RZZdpM6DSrG7fqg-R-dYP1vmvTso-h768A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Rings</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Elegant waist chain jewelry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyGrc7yeHfYNgnoYtIArGqav8_5kd1HcTfZocbuLic_v9bOA6HTrpkrOWTCsVPmU-oOpWtPMMfu7qpKfaK1G9CNIHRBAXmC9xEWlTG7lePAhTOm2fyT8d2PgMX5r-pz6FXS44XPqVk_6cudPjljSW59hVSozThBb5ECom0pfCBaREZOw0bggxrU05ELCYLwQn2rwWv7VR3u4Aq0gTCOSLiMnfBiXFT6s8rimPpv0JTsxVXVeIPlAJdszs-XiC6l9tA8-OeFqBXOV8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Waist Chains</span>
+</div>
+</a>
+<a class="group relative aspect-square overflow-hidden rounded-xl bg-slate-100 col-span-2 sm:col-span-1 lg:col-span-2" href="#">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Luxury gold wristwatch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUDE7rrRymhA7Ic68wDW9bwGPTfJXdkOJ0vpwzI_c2SsUCHg79CM5vLIfK_YjV1Sagr28GkHf_lEmUHqCarFDCyjKItspelX-RvHJSk_4_ebhH-H-fkC99qaP7fSeB5d8WBSUf__RVibPriV5w5qc0fN_wawhUUnLxjkEahHNQGlPy7b-bEv7Dueg2kIOVzAJmCOHB91hSZ8YtEgy9pq5td3UBgWS2G9wkDl7-SyRpuJmqXO9feEPnpUYtlBpPv4m3ZYMdp5TJMD4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+<span class="text-white font-bold tracking-wide">Wristwatches</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Best Selling Products -->
+<section class="py-20 bg-background-light dark:bg-slate-900/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between mb-12">
+<div>
+<h2 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100">Best Selling Products</h2>
+<p class="text-slate-500 mt-2">Most loved pieces from our global community.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group" href="#">
+                        View all 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card -->
+<div class="group">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Diamond pendant necklace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA02N4qm2cVK__jPkpX8TjMZd2M3TyYqtFrd2tIUNvdIcqeD_Py0wnJa9_gUTRxJDo5ygoU6aW5yE8pTTCgz_vCQk8PYdUj0Jkvwtc5YcEAsIwsp2xSsAaAzaDEXUD6mNfxkVFjNgOiU7T8SMcZvk_Su5e2Uq6x_IGMcQrVHr1-bSK5lkE_IqUmm1WQEHABaLPMP8x9hoeieG_xKJt55yxwP90Kply3CXPlInqC1HCV1_kLspSZ97Bvy40AQMWTShSThrkjuheb5-s"/>
+<button class="absolute top-4 right-4 p-2 bg-white/80 backdrop-blur rounded-full text-slate-900 hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-lg">Quick Add</button>
+</div>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Eternal Sparkle Pendant</h3>
+<p class="text-slate-500 text-sm mb-2">18k White Gold, 1ct Diamond</p>
+<p class="text-primary font-bold text-lg">₦1,250.00</p>
+</div>
+<div class="group">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gold stackable rings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAu7FtgESclmkwQpetwqLHHmMRCb3qjQNE_arxTm0GqzsUkA518St991aJZUi06cxrJrzriSeSQlAAxOthPFN7ddJBT5WibgHtuIGpg0JH9PeUuxrODq3dmLm7qhvmjfXwUB8kRh6AHOLu-xNaN85Y5B-8qeVK_s6JN_W1B4KzFJ7MspAbbgdHkPjy7zHmNb0R8Nw7wTk3SS612kR8Ly9z7ZZYV_bVzt0nUBgybjec-C-LVf_R_H1n_dz54HqAhMObGxleyRx_0Ks"/>
+<button class="absolute top-4 right-4 p-2 bg-white/80 backdrop-blur rounded-full text-slate-900 hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-lg">Quick Add</button>
+</div>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Horizon Gold Band</h3>
+<p class="text-slate-500 text-sm mb-2">24k Solid Yellow Gold</p>
+<p class="text-primary font-bold text-lg">₦890.00</p>
+</div>
+<div class="group">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxe diamond earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAagKImklgxwfDqAEBOoeNL_37n5KNpFY3eMm1vpOwdyBfCvtdfqkcKSj3RWSEBnijWJFDaP_L1yU8Kzjqe-vqyX_-qrNCqelwjwp6zFmzjeZKvPaQv7Ieqg83jTNfqoyDHKlnO_JRTxsvnspBoWLsEbUXdkjuAMyZ3TB15dJZHaJG3sZq4dqrKEhR-SHU3z_xKq1lONmwwxGf_BOB0ldm9XMzEAVJ-i7eJbfBONl6JY3Y1ZTxYW04TiZxxXPvDnDmXWh4-pCa6p3Q"/>
+<button class="absolute top-4 right-4 p-2 bg-white/80 backdrop-blur rounded-full text-slate-900 hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-lg">Quick Add</button>
+</div>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Stellar Drop Earrings</h3>
+<p class="text-slate-500 text-sm mb-2">Platinum, Sapphire Accents</p>
+<p class="text-primary font-bold text-lg">₦2,100.00</p>
+</div>
+<div class="group">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden bg-white dark:bg-slate-800 relative mb-4">
+<img class="w-80 h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern cuff bracelet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvOYgf_i3U_QPghtlV5B055sQpwbKLVrC7nc3nASySI307sTfq_mMHdNJXSfCFnAEEsxhT95lcgUzW7DSUkps7r7AaIOA7gVv8dQav5TirKOtj_qegvXpFg3RJbPNGSAfEl4-4bGMz6QOcIVtJUYuk1UGTBYt_Jysw8CUsViW0sx3hV2A4BE15JeW3hEkfkBT_JkE51UrjlCoHAtwoupfJwRUcsEBtBG1CBllHcLHl6SQoIUfL2anF1SUr7VmZaLjS5jmdHi1hvTQ"/>
+<button class="absolute top-4 right-4 p-2 bg-white/80 backdrop-blur rounded-full text-slate-900 hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-lg">Quick Add</button>
+</div>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Minimalist Cuff</h3>
+<p class="text-slate-500 text-sm mb-2">Brushed Rose Gold</p>
+<p class="text-primary font-bold text-lg">₦450.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-white dark:bg-background-dark overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-3 gap-12">
+<div class="lg:col-span-1">
+<h2 class="text-4xl font-extrabold text-slate-900 dark:text-slate-100 mb-6">What our <br/><span class="text-primary">Collectors</span> Say</h2>
+<div class="flex items-center gap-1 mb-4 text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-slate-500">Trusted by over 10,000 satisfied customers worldwide. Experience luxury defined by quality and trust.</p>
+</div>
+<div class="lg:col-span-2 grid md:grid-cols-2 gap-8 sm:grid-cols-1">
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4">format_quote</span>
+<p class="text-slate-700 dark:text-slate-300 mb-6 italic">"The attention to detail on my engagement ring is phenomenal. Beesclozet made the most important moment of my life even more special."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Customer testimonial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKhhZZxGC5tNyqEHK2mfA_IHrWxoY9h0zqcIYrwG6Z39Q0EbLt_hVvsvo7lvO3lZcjaSFrQ8kLGAtAvSdOnGJf7d2V3MwcHGktS5X9W88K0WoMeAKy7v6scgVqzfv_EO9dOl2uQSyn4QAy4UnYv5V7JS2vMraJFcnPTa53gI_3vJ1quGabvHrw8_vFiazanCqt__xBsmdQ7bFL6LOXWqzJDX48neIG-NooCkG1Bp5BGQ0v1zG2k_bnF6KbXu4hIRdOjFszXQ005bE"/>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Sarah Jenkins</h4>
+<p class="text-xs text-slate-500">Abuja, NG</p>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4">format_quote</span>
+<p class="text-slate-700 dark:text-slate-300 mb-6 italic">"I've been a collector for years, and the craftsmanship at Beesclozet stands apart. Every piece is a conversation starter."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Customer testimonial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDardT5ZoD7VrQ25Og0cn5oeEwmcv8Hfi3tm7ZAEvtrAZnXc2K2_MqiPSSdUi2T2wy1XcGDtRAH9Xo5ucOjveUKdrwW2hXpmlYniLExjknmeTmllnnJQU3vk6KuXTq8ZJZxU7pdb6MYabDsSmuQSBSrA2RRidgD_YNC9U70jIq6oxDwnxTTYKoHSoOqdqyRdGDtq3CypveE1Yj8PxlyVXxIGkyACgbDW-gzNXiPnR-0acbEjjrTfA2IPbVDSROwz7LiCalqR_wQmw"/>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">David Ross</h4>
+<p class="text-xs text-slate-500">Lagos, NG</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-primary rounded-[2rem] p-8 md:p-16 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+<h2 class="text-3xl md:text-5xl font-extrabold mb-6 relative z-10">Join the Circle of Luxury</h2>
+<p class="text-white/80 max-w-xl mx-auto mb-10 relative z-10">Subscribe to receive exclusive offers, early access to new collections, and jewelry care tips.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto relative z-10">
+<input class="flex-1 px-6 py-4 rounded-xl text-slate-900 focus:ring-0 border-none" placeholder="Enter your email" type="email"/>
+<button class="px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-800 transition-all">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-white mb-6">
+<span class="material-symbols-outlined text-2xl font-bold">diamond</span>
+<h2 class="text-xl font-extrabold">Beesclozet</h2>
+</div>
+<p class="text-sm leading-relaxed mb-6">Redefining luxury through timeless design and exceptional craftsmanship. Your destination for fine jewelry since 1995.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">thumb_up</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Quick Links</h3>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shop All</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Categories</a></li>
+<li><a class="hover:text-white transition-colors" href="#">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Customer Care</h3>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Jewelry Care</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Size Guide</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Contact</h3>
+<ul class="space-y-4 text-sm">
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">location_on</span> 5th Avenue, New York, NY</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">mail</span> concierge@luxejewels.com</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">call</span> +1 (212) 555-0198</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between gap-4">
+<p>© 2026 Beesclozet. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+</script><div class="fixed inset-0 z-[60] bg-background-dark/95 backdrop-blur-sm flex flex-col items-center justify-start pt-20 px-4 transition-all duration-300 opacity-0 pointer-events-none" id="search-modal">
+<button class="absolute top-6 right-6 p-2 text-white/70 hover:text-white transition-colors" id="close-search-modal">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<div class="w-full max-w-2xl">
+<h2 class="text-white text-2xl font-bold mb-8 text-center">Search our Collection</h2>
+<div class="relative">
+<span class="absolute inset-y-0 left-4 flex items-center text-primary">
+<span class="material-symbols-outlined text-2xl">search</span>
+</span>
+<input autofocus="" class="w-full bg-white/10 border-2 border-primary/30 rounded-2xl py-5 pl-14 pr-6 text-xl text-white placeholder-white/40 focus:outline-none focus:border-primary focus:ring-0 transition-all shadow-2xl shadow-primary/20" placeholder="What are you looking for?" type="text"/>
+</div>
+<div class="mt-8">
+<p class="text-white/40 text-sm mb-4">Popular Searches</p>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Diamond Rings</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Gold Bangles</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">New Arrivals</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Gift Sets</button>
+</div>
+</div>
+</div>
+</div><script>
+    const searchModal = document.getElementById('search-modal');
+    const openSearch = document.getElementById('mobile-search-trigger');
+    const closeSearch = document.getElementById('close-search-modal');
+
+    function toggleSearchModal() {
+        searchModal.classList.toggle('opacity-0');
+        searchModal.classList.toggle('pointer-events-none');
+        if (!searchModal.classList.contains('opacity-0')) {
+            searchModal.querySelector('input').focus();
+        }
+    }
+
+    openSearch.addEventListener('click', toggleSearchModal);
+    closeSearch.addEventListener('click', toggleSearchModal);
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('opacity-0')) {
+            toggleSearchModal();
+        }
+    });
+</script></body></html>

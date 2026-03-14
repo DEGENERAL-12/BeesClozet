@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beesclozet | Shop Premium Jewelry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7317cf",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191121",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2">
+    <img src="logo.png" alt="Logo" class="w-20 sm:w-24 md:w-28 lg:w-32 h-auto">
+</div>
+
+<nav class="hidden lg:flex items-center gap-8">
+<a href="index-2.html" class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a href="shop.html" class="text-sm font-semibold hover:text-primary transition-colors" href="#">Shop</a>
+<div class="relative group">
+<button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors">
+                    Categories
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-primary/10 overflow-hidden py-2">
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Anklets</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Bangles</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Bracelets</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Branded Jewelry</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Jewelry Set</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Pendants</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Rings</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Waist Chains</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Wristwatches</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="all-categories.html">Go to Categories Page</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="flex items-center gap-4 flex-1 justify-end">
+<div class="flex items-center gap-2">
+<div class="relative w-full max-w-xs hidden lg:block">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+<span class="material-symbols-outlined text-sm">search</span>
+</span>
+<input class="block w-full pl-10 pr-3 py-2 border-none bg-primary/5 rounded-lg text-sm placeholder-slate-400 focus:ring-2 focus:ring-primary" placeholder="Search collection..." type="text"/>
+</div>
+<button class="lg:hidden p-2 hover:bg-primary/10 rounded-full transition-colors flex items-center justify-center" id="mobile-search-trigger">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<div class="relative group">
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</button>
+<div class="absolute right-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-primary/10 overflow-hidden py-2"><a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="auth.html">
+<span class="material-symbols-outlined text-lg">login</span>
+                Login
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="auth.html">
+<span class="material-symbols-outlined text-lg">person_add</span>
+                Create Account
+            </a>
+<div class="h-px bg-primary/10 my-1"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">person</span>
+                My Account
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="order.html">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                Orders
+            </a>
+<div class="h-px bg-primary/10 my-1"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">logout</span>
+                Logout
+            </a>
+</div>
+</div>
+</div><div class="flex items-center gap-2">
+<a href="cart.html" class="p-2 hover:bg-primary/10 rounded-full transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</a>
+<button class="lg:hidden p-2 hover:bg-primary/10 rounded-full transition-colors" id="mobile-menu-button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</div><div class="lg:hidden hidden border-t border-primary/10 bg-white dark:bg-background-dark py-4" id="mobile-menu">
+<nav class="flex flex-col px-4 space-y-4">
+<a class="text-base font-semibold text-slate-900 dark:text-slate-100" href="index-2.html">Home</a>
+<a class="text-base font-semibold text-slate-900 dark:text-slate-100" href="shop.html">Shop</a>
+<div class="pt-2">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Categories</p>
+<div class="grid grid-cols-2 gap-2">
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Anklets</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Bangles</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Bracelets</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Branded</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Jewelry Set</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Pendants</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Rings</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Wristwatches</a>
+</div>
+</div>
+
+</div></nav>
+</div>
+</header>
+
+
+
+</div>
+
+<main class="max-w-7xl mx-auto w-full px-4 md:px-6 py-8">
+<div class="flex flex-col lg:flex-row gap-8">
+<aside class="w-full lg:w-64 shrink-0 space-y-8 hidden lg:block">
+<div>
+<h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">filter_list</span> Filters
+                        </h3>
+<div class="space-y-3">
+<p class="text-sm font-bold text-primary/70 uppercase tracking-wider">Categories</p>
+<div class="space-y-2 max-h-60 lg:max-h-none overflow-y-auto">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Anklets</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm text-primary font-medium">Bangles</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Bracelets</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Branded Jewelry</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Jewelry Set</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Pendants</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Rings</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Waist Chains</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Wristwatches</span>
+</label>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<p class="text-sm font-bold text-primary/70 uppercase tracking-wider">Price Range</p>
+<div class="relative pt-1">
+<input class="w-full h-1.5 bg-primary/20 rounded-lg appearance-none cursor-pointer accent-primary" type="range"/>
+<div class="flex justify-between mt-2 text-xs font-medium">
+<span>₦0</span>
+<span>₦5000+</span>
+</div>
+</div>
+</div>
+</aside>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-extrabold text-slate-900 dark:text-slate-100">Shop All Jewelry</h2>
+<div class="flex items-center gap-2">
+<span class="text-sm text-slate-500">Sort by:</span>
+<select class="border-none bg-transparent text-sm font-bold text-primary focus:ring-0 cursor-pointer">
+<option>Newest</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Popularity</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+<div class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+<div class="aspect-square bg-slate-100 relative overflow-hidden">
+
+<a href="product-description.html">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a luxury diamond ring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeZDN3qp__Vb3ZX2bj1nSjRRC-yXD9onwtVTwQP3Vz8x1Yq4yL--y6u81TLzGPj2fXUgYrwLMwob1GmnU5aO0jNyOjyrUQcLImE0pxGIv03Hfp2-wrFzUboKGt0teRXRzdaqKBvr3XQtLuOHn5X14eqE2F99Da9T_5Kx96-Pd-62TgfWFJscWcWao5bjKUzTVbKP94GEocALgHc3eNJIoFsSCKpS2kKs-_fzOePYmT6Tnb9z_-77Ks3vJ6UWxKB1WQJN-V4-67ePI"/>
+</a>
+
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" title="Add to Wishlist">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<p class="text-xs text-primary font-bold mb-1 uppercase tracking-tighter">Rings</p>
+<h4 class="font-bold text-sm md:text-base mb-2 group-hover:text-primary transition-colors">Diamond Solitaire</h4>
+<div class="flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">₦1,250</span>
+<button class="p-1.5 rounded-lg bg-primary/5 text-primary hover:bg-primary hover:text-white transition-all" title="Add to Cart">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+<div class="aspect-square bg-slate-100 relative overflow-hidden">
+
+<a href="product-description.html">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Elegant gold necklace pendant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY3MXE9jyJT6XVJZMEtToFxKg1XloVmRFKpUVsU8zArMQ741i5Z2EWaqsJdbt8EBYgsRJd8092z9Hs1luySHhmPJ51Y9Vf1D25oe_UMXuqQkHdPphz6bw7lvU3spyJ6HH9OlY1zPRWRHzKUnYWUXh5o2Itp7MzS9VbwTits-ED8wi-lQHkuR444cHAkW2wCiTmRG0RsNAP6oILcJq1DEUWysl89L7aYF046mY8k_VK4e7xfYfY4bdfU6_dsb7YAE-Ukw8wLB3s84s"/>
+</a>
+
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur flex items-center justify-center text-primary" title="Add to Wishlist">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<p class="text-xs text-primary font-bold mb-1 uppercase tracking-tighter">Pendants</p>
+<h4 class="font-bold text-sm md:text-base mb-2">Golden Leaf Pendant</h4>
+<div class="flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">₦450</span>
+<button class="p-1.5 rounded-lg bg-primary/5 text-primary" title="Add to Cart">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+<div class="aspect-square bg-slate-100 relative overflow-hidden">
+<a href="product-description.html">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist silver bracelet set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxY98KsISsWppNR3NRO54v3wQEAu2-no3lC4tXpBssay29Dwg6Ys-o65mLcqstocducZaWslyLg73Cvo9ySFfdAEk8v-duZlo-FX_GlzwhnQAM__CEmggHD2CIZ17WM__SCsScXKcgp5VzGr5NEwtUXD3zOMU5kQJXTRH7ylev60MovNNksnOAZuKD3jlWwtK-rv4zJAXhOHIrc1VTImA5gIaY1lqtMzcE3RSb7TM1U1kc9YIa38aMvXqHXcQ-DLZFWJeMDCztspE"/>
+</a>
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur flex items-center justify-center text-primary" title="Add to Wishlist">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<p class="text-xs text-primary font-bold mb-1 uppercase tracking-tighter">Bracelets</p>
+<h4 class="font-bold text-sm md:text-base mb-2">Silver Charm Set</h4>
+<div class="flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">₦320</span>
+<button class="p-1.5 rounded-lg bg-primary/5 text-primary" title="Add to Cart">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+<div class="aspect-square bg-slate-100 relative overflow-hidden">
+<a href="product-description.html">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury wrist watch on stand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXRB1MU5cMEAldTuqGI1dGSZw_Y1jFAelF1b9w9pBiNHoX7Nw1fl7J39uyt7SPCcwQHpE5Ms2dTct-OD3-2RXIkvhatZM7KeD94L06DgujoY39zt-1ii-frhnfphOtOywb45y5_dTbQl629F39Hdsy1DUhoPjk98XVcArKK1vojjhJA2x_aMBwVoO4Xu9f3W3f6cGnNF8t9TGN32uyiBWBdVCN3RDXihCrJJ6JpjXkzZdGzs694Umc_KH1FSm28kN7sYKrNNcVC0"/>
+</a>
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur flex items-center justify-center text-primary" title="Add to Wishlist">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<p class="text-xs text-primary font-bold mb-1 uppercase tracking-tighter">Wristwatches</p>
+<h4 class="font-bold text-sm md:text-base mb-2">Chronograph Pro</h4>
+<div class="flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">₦2,800</span>
+<button class="p-1.5 rounded-lg bg-primary/5 text-primary" title="Add to Cart">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+<div class="aspect-square bg-slate-100 relative overflow-hidden">
+<a href="product-description.html">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stack of thin gold bangles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZke2PWm3vQDF3b06UprIl4zzZ0dI9nZ_06hoX-ZKSpcZfcpHlPu6jqlxp9Rkk_XqzqBWJvyOPyAwA5lLnQqlRG3iQTOhtDhCBOufNNHqglvpizw3j-Qsok346dxdNcOlX7nKnlE4AHIyXt-zuh2vsFrMEHeUr_YUIrs9au5RfPIPqVAgyUG-gYI10-3hhUEiJqdjexYJyGn-ATTcTsZ2rTDaMaJI8XpnFE9mqrRQlP2VQeLzTO0_tXmenU5ha195hp8shTfnV4b4"/>
+</a>
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur flex items-center justify-center text-primary" title="Add to Wishlist">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<p class="text-xs text-primary font-bold mb-1 uppercase tracking-tighter">Bangles</p>
+<h4 class="font-bold text-sm md:text-base mb-2">Everglow Bangle Stack</h4>
+<div class="flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">₦890</span>
+<button class="p-1.5 rounded-lg bg-primary/5 text-primary" title="Add to Cart">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+<div class="aspect-square bg-slate-100 relative overflow-hidden">
+<a href="product-description.html">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Matching pearl jewelry set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0PVWa8TWfF5hQmUa-cqzcpTfc7A6nczBflIwXzIBWa2G20suJepmN-6JZYuc7oN5yrbVLUjjJNDdch1xrvzdMoB0lMu5X3u8aLD0M5j-uCOwlKKl78nwkCkKbXWD9crQGrOjSerR94Udc8X1Tl0pdFTeYH8SuoZV0k-44A_jcx1XPMufbMMFDBwGT6iYljnUyg0seeMX0SWutuLqo4V8WOvdsV6yCZp8DJmKW4QH7Vc_Th4rA5l6XQ3TsmQURJCikBsiGMK7f1mE"/>
+</a>
+
+<button class="absolute top-3 right-3 size-8 rounded-full bg-white/80 backdrop-blur flex items-center justify-center text-primary" title="Add to Wishlist">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<p class="text-xs text-primary font-bold mb-1 uppercase tracking-tighter">Jewelry Set</p>
+<h4 class="font-bold text-sm md:text-base mb-2">Royal Pearl Ensemble</h4>
+<div class="flex items-center justify-between">
+<span class="text-lg font-extrabold text-primary">₦3,400</span>
+<button class="p-1.5 rounded-lg bg-primary/5 text-primary" title="Add to Cart">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-20">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100">New Arrivals</h2>
+<p class="text-slate-500 mt-1">Discover our latest handcrafted pieces</p>
+</div>
+<a class="text-primary font-bold text-sm flex items-center gap-1 group" href="#">
+                        View All <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="group space-y-3">
+<div class="aspect-[4/5] bg-white rounded-xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" data-alt="Elegant diamond earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8MxaLARJEx_BtO7w5XaxxAWwCOajrQMSjkuof_IcArcTpobSoP-cqUEvrQ3qnAreYxHVDkfxM4N0N-VcdbLhEjGf3df_3AFEVU-19aZ9h0G7VM6Z8uBifUnRBGvxtg31v91reDq7uAr5aardR1H46MrV_PmvAd2NhScx1aLeIQxT4g8g45KhtZ4i9Oj1p1h6pZ4dbSrOtMuhhoWxjuiD8YTy4HJ61gYlFz-e2GGLGYoSK-dqtYe4iIWWkF-5RuppFAHRs6EkAkoo"/>
+<div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-widest">New</div>
+</div>
+<div>
+<h4 class="font-bold text-sm">Celestial Earrings</h4>
+<p class="text-primary font-extrabold">₦780</p>
+</div>
+</div>
+<div class="group space-y-3">
+<div class="aspect-[4/5] bg-white rounded-xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" data-alt="Unique textured gold ring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfTdKQV52aC6OtGYCU7kSqdQX0YLincJEP11t7Jo4Zh1k-ZyuSiHztEllphV2NvZ3C3EJ-sEwKrvoZz1j0OZGd83WTRT5mJoLvswqp0_dvMRCO71wPhNldTis0AojZVDq7DAA1G_5wDH3oPflK8HWCPa5Z7Gdfwgf4K6V6hbQ87qpaZmRoZM2zDhh9LlbJToZxY7eH5lNXRNrE9JaUPG8ddqYvQi_LdeNG57Uvuz8isZQiFd2OX7e2ZSOIyJxQx4sJ84x4Ll5gPpE"/>
+</div>
+<div>
+<h4 class="font-bold text-sm">Textured Gold Band</h4>
+<p class="text-primary font-extrabold">₦550</p>
+</div>
+</div>
+<div class="group space-y-3">
+<div class="aspect-[4/5] bg-white rounded-xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" data-alt="Blue sapphire necklace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz5DbFQgpRoYpIWAiyz6f951L77f6PDUJ9PIr4Rs7QcuBOBgE4_z0KUOkFr8is0myI8ULeYnHfi0gJIAc7jW4F0qCTc_mmURMosEbpAL_LsA-whyNjq1nnXosZUpF_xqYUwIGjZ9ar-jre31SuF2lJlml86qAhtoMaVtTC6z5PZy4qV2Snrab2eGzyl_WKDryWb8LmWxrolCpJ9tEyrlII-SUXkb1nrrziElEopeIzz2QRhkNZ8jJASLqngq4LUDuOnDgfaunlOM4"/>
+</div>
+<div>
+<h4 class="font-bold text-sm">Sapphire Dream Necklace</h4>
+<p class="text-primary font-extrabold">₦1,950</p>
+</div>
+</div>
+<div class="group space-y-3">
+<div class="aspect-[4/5] bg-white rounded-xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" data-alt="Modern geometric bracelet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIEhnMJo56wJCpZljIUvOmFmJc4p0qdAg8Yixttfc2tpXPnv94_NfvCFoTk0f3phu_dXiMIrSgDgSIn65nVXr4ovCsldIOIUMs1WtQSlAxeLIePgXdaGhovw8hWa8Q0Z-FZhWkDhF0nzBtH5MFBKS9LNfdNkoUWxi8USiMo4jtdk95IYUo-DWbOg9lch4P0k9v4A6eTQYsMH7TWs5b-H9cL66k8f_gIhm_x9VElJ7te2aotG50AvEN-msqf4oeseFDtNdrI6et0Zs"/>
+</div>
+<div>
+<h4 class="font-bold text-sm">Geometric Cuff</h4>
+<p class="text-primary font-extrabold">₦420</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-24 mb-16">
+<div class="bg-primary/5 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-8">Best Sellers</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm border border-primary/10">
+<div class="aspect-square rounded-xl overflow-hidden mb-4">
+<img class="w-full h-full object-cover" data-alt="Iconic gold chain necklace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARqMoIrWPkOi3sQUYuc-dNmBmj7PhuBOWxLy2dmM1HH2oDA2hktA6t4o0j2VBpjVqGVqQjxl3Sf8pc2tEnkA3wjs7Fme_-yus5nVRmVUDBEB3_3QKHpO13LQTGKTyU-NfBgmX-nLJtUonGPSVMNyWT2GuWLSnIfgheUfEXrI43H1x4tljajIJ7LrSB-eL8K6r0c0RHdTD7ZEXD0JZuYZPKYYOUgeaMhqjJ00gAJeAG2jbCisptpn0N4y3SRVVL_grJ_LwpkFpauOc"/>
+</div>
+<h4 class="font-bold text-sm truncate">Infinity Chain</h4>
+<div class="flex items-center gap-1 text-yellow-500 my-1">
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+</div>
+<p class="text-primary font-bold">₦1,100</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm border border-primary/10">
+<div class="aspect-square rounded-xl overflow-hidden mb-4">
+<img class="w-full h-full object-cover" data-alt="Classic pearl stud earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc3OaozSGffOgfLbR0lr8sZpOJCP8i1otko-v1NAqHl5SFXC_v0yJsfg2IHaTtet7_BumcOjItsF47njEeqzRtKgZJ76q9suO0Qdli8lJK-GtTKYEK5-Wh-A0O3FFAPq74jfxsGw9zZkYulXMURSr_BxdT9RYyroaY0Ize-a6xVENT5wgUxB2-aFsXT8a3V7WfO4ddf-OeOfwhLWBHEg4-latSDFrWJDhTfS5yQkhRmn1FXAN97eqJmi5NFSUELEDm2TbVbzGq8kM"/>
+</div>
+<h4 class="font-bold text-sm truncate">Morning Pearl Studs</h4>
+<div class="flex items-center gap-1 text-yellow-500 my-1">
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+</div>
+<p class="text-primary font-bold">₦190</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm border border-primary/10">
+<div class="aspect-square rounded-xl overflow-hidden mb-4">
+<img class="w-full h-full object-cover" data-alt="Minimalist luxury watch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbao6v3G1ausgRafhABgIlugDVTYrwUBlGvLIqyfQnxIGPs3rz-WugpYO6_efoGBp8RSHVNRlxfPEUCj5oF_Nx8qh536iSafwbKkcBJeAvM5gONuGzHc_bnfz1SG4jhHsljye9b5sg6kstBE-_sJb1-T8xEqGBmhK0dxOh9SbI0jTc6PPnd5Lv6Ywed1euC7BiBLGHOV2e7j0d62GzeMZOjInDJau8IXNhc7LnJPPLz49YYD4adzhWJ1DXRJTwYFnBDa6dneD15C0"/>
+</div>
+<h4 class="font-bold text-sm truncate">Heritage Timepiece</h4>
+<div class="flex items-center gap-1 text-yellow-500 my-1">
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+</div>
+<p class="text-primary font-bold">₦4,200</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm border border-primary/10">
+<div class="aspect-square rounded-xl overflow-hidden mb-4">
+<img class="w-full h-full object-cover" data-alt="Multi-layered gold necklace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuhDM-f1v29nxcpb5WexjGsGP4ny2iD2vtZLP6_cCS3OkxdJ02L22kSjHRc5Ym_7PtIWb6bqPEM2zhLuySmWjWqfh-Ca3SxYfxGhO6H_3NBv3mQQLcNkniwBSztogY-TeektVdSD_dLbTfrJuBQWSyhkegLF8uUBw5cZwZ-4urv7xtywODtCoKMxKciUqjcn96Omg8LVS1LCSmu9WggzW-bX8hCBuGEs-ZcRzLViAIxAK3WzNbFdPP5gpjwhPhgV6YGPfZkmxv5Ts"/>
+</div>
+<h4 class="font-bold text-sm truncate">Goddess Layers</h4>
+<div class="flex items-center gap-1 text-yellow-500 my-1">
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+<span class="material-symbols-outlined text-xs fill-1">star</span>
+</div>
+<p class="text-primary font-bold">₦1,550</p>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+</div>
+</section><section class="lg:hidden mt-12 mb-16 px-4 md:px-6">
+<div class="bg-white dark:bg-background-dark rounded-3xl p-8 border border-primary/10 shadow-sm">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">filter_list</span> Shop Filters
+        </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<p class="text-sm font-bold text-primary/70 uppercase tracking-wider">Categories</p>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Anklets</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm text-primary font-medium">Bangles</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Bracelets</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Branded Jewelry</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Jewelry Set</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Pendants</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Rings</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-sm text-primary focus:ring-primary border-primary/30" type="checkbox"/>
+<span class="text-sm group-hover:text-primary transition-colors">Waist Chains</span>
+</label>
+</div>
+</div>
+<div class="space-y-4">
+<p class="text-sm font-bold text-primary/70 uppercase tracking-wider">Price Range</p>
+<div class="relative pt-1 pb-4">
+<input class="w-full h-1.5 bg-primary/20 rounded-lg appearance-none cursor-pointer accent-primary" type="range"/>
+<div class="flex justify-between mt-2 text-xs font-medium">
+<span>$0</span>
+<span>$5000+</span>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-all">Apply Filters</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-white mb-6">
+<span class="material-symbols-outlined text-2xl font-bold">diamond</span>
+<h2 class="text-xl font-extrabold">Beesclozet</h2>
+</div>
+<p class="text-sm leading-relaxed mb-6">Redefining luxury through timeless design and exceptional craftsmanship. Your destination for fine jewelry since 1995.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">thumb_up</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Quick Links</h3>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shop All</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Categories</a></li>
+<li><a class="hover:text-white transition-colors" href="#">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Customer Care</h3>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Jewelry Care</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Size Guide</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Contact</h3>
+<ul class="space-y-4 text-sm">
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">location_on</span> 5th Avenue, New York, NY</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">mail</span> concierge@luxejewels.com</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">call</span> +1 (212) 555-0198</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between gap-4">
+<p>© 2026 Beesclozet. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+
+
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+</script><div class="fixed inset-0 z-[60] bg-background-dark/95 backdrop-blur-sm flex flex-col items-center justify-start pt-20 px-4 transition-all duration-300 opacity-0 pointer-events-none" id="search-modal">
+<button class="absolute top-6 right-6 p-2 text-white/70 hover:text-white transition-colors" id="close-search-modal">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<div class="w-full max-w-2xl">
+<h2 class="text-white text-2xl font-bold mb-8 text-center">Search our Collection</h2>
+<div class="relative">
+<span class="absolute inset-y-0 left-4 flex items-center text-primary">
+<span class="material-symbols-outlined text-2xl">search</span>
+</span>
+<input autofocus="" class="w-full bg-white/10 border-2 border-primary/30 rounded-2xl py-5 pl-14 pr-6 text-xl text-white placeholder-white/40 focus:outline-none focus:border-primary focus:ring-0 transition-all shadow-2xl shadow-primary/20" placeholder="What are you looking for?" type="text"/>
+</div>
+<div class="mt-8">
+<p class="text-white/40 text-sm mb-4">Popular Searches</p>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Diamond Rings</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Gold Bangles</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">New Arrivals</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Gift Sets</button>
+</div>
+</div>
+</div>
+</div><script>
+    const searchModal = document.getElementById('search-modal');
+    const openSearch = document.getElementById('mobile-search-trigger');
+    const closeSearch = document.getElementById('close-search-modal');
+
+    function toggleSearchModal() {
+        searchModal.classList.toggle('opacity-0');
+        searchModal.classList.toggle('pointer-events-none');
+        if (!searchModal.classList.contains('opacity-0')) {
+            searchModal.querySelector('input').focus();
+        }
+    }
+
+    openSearch.addEventListener('click', toggleSearchModal);
+    closeSearch.addEventListener('click', toggleSearchModal);
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('opacity-0')) {
+            toggleSearchModal();
+        }
+    });
+</script>
+
+</body></html>

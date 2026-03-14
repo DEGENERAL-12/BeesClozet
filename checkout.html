@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7317cf",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191121",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<title>Checkout | LuxeJewel</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2">
+    <img src="logo.png" alt="Logo" class="w-20 sm:w-24 md:w-28 lg:w-32 h-auto">
+</div>
+
+<nav class="hidden lg:flex items-center gap-8">
+<a href="index-2.html" class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a href="shop.html" class="text-sm font-semibold hover:text-primary transition-colors" href="#">Shop</a>
+<div class="relative group">
+<button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors">
+                    Categories
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-primary/10 overflow-hidden py-2">
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Anklets</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Bangles</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Bracelets</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Branded Jewelry</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Jewelry Set</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Pendants</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Rings</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Waist Chains</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="shop.html">Wristwatches</a>
+<a class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="all-categories.html">Go to Categories Page</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="flex items-center gap-4 flex-1 justify-end">
+<div class="flex items-center gap-2">
+<div class="relative w-full max-w-xs hidden lg:block">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+<span class="material-symbols-outlined text-sm">search</span>
+</span>
+<input class="block w-full pl-10 pr-3 py-2 border-none bg-primary/5 rounded-lg text-sm placeholder-slate-400 focus:ring-2 focus:ring-primary" placeholder="Search collection..." type="text"/>
+</div>
+<button class="lg:hidden p-2 hover:bg-primary/10 rounded-full transition-colors flex items-center justify-center" id="mobile-search-trigger">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<div class="relative group">
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</button>
+<div class="absolute right-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-primary/10 overflow-hidden py-2"><a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="auth.html">
+<span class="material-symbols-outlined text-lg">login</span>
+                Login
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="auth.html">
+<span class="material-symbols-outlined text-lg">person_add</span>
+                Create Account
+            </a>
+<div class="h-px bg-primary/10 my-1"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">person</span>
+                My Account
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-primary/5 hover:text-primary transition-colors" href="order.html">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                Orders
+            </a>
+<div class="h-px bg-primary/10 my-1"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">logout</span>
+                Logout
+            </a>
+</div>
+</div>
+</div><div class="flex items-center gap-2">
+<a href="cart.html" class="p-2 hover:bg-primary/10 rounded-full transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</a>
+<button class="lg:hidden p-2 hover:bg-primary/10 rounded-full transition-colors" id="mobile-menu-button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</div><div class="lg:hidden hidden border-t border-primary/10 bg-white dark:bg-background-dark py-4" id="mobile-menu">
+<nav class="flex flex-col px-4 space-y-4">
+<a class="text-base font-semibold text-slate-900 dark:text-slate-100" href="index-2.html">Home</a>
+<a class="text-base font-semibold text-slate-900 dark:text-slate-100" href="shop.html">Shop</a>
+<div class="pt-2">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Categories</p>
+<div class="grid grid-cols-2 gap-2">
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Anklets</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Bangles</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Bracelets</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Branded</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Jewelry Set</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Pendants</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Rings</a>
+<a class="text-sm text-slate-600 dark:text-slate-400" href="shop.html?Anklets">Wristwatches</a>
+</div>
+</div>
+
+</div></nav>
+</div>
+</header>
+
+
+
+<main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm text-slate-500 mb-8">
+<a class="hover:text-primary" href="#">Shopping Bag</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Checkout</span>
+</nav>
+<h2 class="text-3xl font-extrabold mb-10 tracking-tight">Checkout</h2>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Shipping & Delivery -->
+<div class="lg:col-span-7 space-y-10">
+<!-- Shipping Section -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">1</span>
+<h3 class="text-xl font-bold">Shipping Information</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="md:col-span-2">
+<label class="block text-sm font-semibold mb-2">Full Name</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">Email Address</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="john@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">Phone Number</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="+234 (701) 000-0000" type="tel"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-sm font-semibold mb-2">Street Address</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="123 Luxury Lane" type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-sm font-semibold mb-2">Apartment, suite, etc. (optional)</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="Suite 404" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">City</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="New York" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">Nearest Box-stop</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="NY" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">Zip / Postal Code</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12" placeholder="10001" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">State</label>
+<select class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-12">
+<option>Abuja</option>
+<option>Lagos</option>
+<option>Kano</option>
+<option>Port-harcourt</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Shipping Method Section -->
+
+</div>
+<!-- Right Column: Order Summary & Payment -->
+<div class="lg:col-span-5">
+<div class="sticky top-24 space-y-6">
+<!-- Order Summary Card -->
+<div class="bg-white dark:bg-background-dark border border-primary/10 rounded-xl p-6 shadow-sm">
+<h3 class="text-lg font-bold mb-6">Order Summary</h3>
+<!-- Items -->
+<div class="space-y-4 mb-6">
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-lg bg-primary/5 flex-shrink-0 overflow-hidden border border-primary/5">
+<img alt="Diamond Ring" class="w-full h-full object-cover" data-alt="Elegant diamond engagement ring on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLYCEErHTwh3y-WYhR5SRdQhc0eEwpP-V_H7bKYQdeWVlDDIYggTPs7l_HWBg66k8WqjZsbP5-bSg9SsPGGk0cqRCZZwKVU8f0_s_n3jN_8XhRw-Su-PWlNBgHig9KVo5cN_sMPYL1qvP09r6W18czPTZ1NvWPjxNiSszB7rWjvPZCJxyKbUhNObwJeGLKHu8B8OiBFs7ZluAeN0jmSM-STLakrAfRtZFxlX76NUXNT4VRLy56YfFNn7MCYIP8FfyGNN61FhTtQbI"/>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Elysian Diamond Ring</p>
+<p class="text-xs text-slate-500">18k White Gold / 1.5 Carat</p>
+<p class="text-sm font-bold mt-1">₦2,450.00</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-lg bg-primary/5 flex-shrink-0 overflow-hidden border border-primary/5">
+<img alt="Pearl Necklace" class="w-full h-full object-cover" data-alt="Classic freshwater pearl necklace arrangement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmSB42VyFX-EldlOHT5AFpNISokxhzibyt41MwBx-9VSACJKFfY3iOyWQLqIqKkFUj-o4F6OPL6XgZYVjXR6anV_Yv2jJdShJBSbdex1jNiwBCVsXioXZnTgP3wCHWEB8b2j7AdqTdgwCkEJ6_VvY_8NCVjcJ84I8baIIAQZghnoxd7jOrWHXQxQtUdmYjR2OdAQGxosdFcxeRD1Tq_OIpVODxqekansfzcglE8pX6rJ9NkiUNVyzA_lB2SEXeOg8-Gpj2IfR_jgE"/>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Midnight Pearl Necklace</p>
+<p class="text-xs text-slate-500">Sterling Silver / Black Pearl</p>
+<p class="text-sm font-bold mt-1">₦890.00</p>
+</div>
+</div>
+</div>
+<!-- Totals -->
+<div class="border-t border-primary/10 pt-4 space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Subtotal</span>
+<span class="font-semibold">₦3,340.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Shipping</span>
+<span class="font-semibold text-green-600">Free</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Estimated Tax</span>
+<span class="font-semibold">₦267.20</span>
+</div>
+<div class="flex justify-between text-lg font-extrabold pt-2 border-t border-primary/10">
+<span>Total</span>
+<span class="text-primary">₦3,607.20</span>
+</div>
+</div>
+</div>
+<!-- Payment Card -->
+<div class="bg-white dark:bg-background-dark border border-primary/10 rounded-xl p-6 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">3</span>
+<h3 class="text-lg font-bold">Payment Details</h3>
+</div>
+<!-- Payment Tabs -->
+<div class="flex gap-2 mb-6">
+<button class="flex-1 flex flex-col items-center justify-center p-3 border-2 border-primary rounded-lg bg-primary/5">
+<span class="material-symbols-outlined text-primary mb-1">credit_card</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Card</span>
+</button>
+<button class="flex-1 flex flex-col items-center justify-center p-3 border border-primary/10 rounded-lg hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-slate-400 mb-1">payments</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">PayPal</span>
+</button>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Card Number</label>
+<div class="relative">
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-11 pr-12" placeholder="0000 0000 0000 0000" type="text"/>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 flex gap-1">
+<div class="w-6 h-4 bg-slate-200 rounded-sm"></div>
+<div class="w-6 h-4 bg-slate-200 rounded-sm"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Expiry Date</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-11 text-center" placeholder="MM / YY" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">CVV</label>
+<input class="w-full border-primary/20 rounded-lg focus:border-primary focus:ring-primary/20 h-11 text-center" placeholder="123" type="text"/>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-xl mt-8 hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+<span>Complete Purchase</span>
+<span class="material-symbols-outlined text-xl">lock</span>
+</button>
+<p class="text-center text-[11px] text-slate-400 mt-4 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-xs">verified_user</span>
+                            Your transaction is encrypted and secure
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-white mb-6">
+<span class="material-symbols-outlined text-2xl font-bold">diamond</span>
+<h2 class="text-xl font-extrabold">Beesclozet</h2>
+</div>
+<p class="text-sm leading-relaxed mb-6">Redefining luxury through timeless design and exceptional craftsmanship. Your destination for fine jewelry since 1995.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">thumb_up</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Quick Links</h3>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shop All</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Categories</a></li>
+<li><a class="hover:text-white transition-colors" href="#">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Customer Care</h3>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Jewelry Care</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Size Guide</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-6">Contact</h3>
+<ul class="space-y-4 text-sm">
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">location_on</span> 5th Avenue, New York, NY</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">mail</span> concierge@luxejewels.com</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-xs">call</span> +1 (212) 555-0198</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between gap-4">
+<p>© 2026 Beesclozet. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+</script><div class="fixed inset-0 z-[60] bg-background-dark/95 backdrop-blur-sm flex flex-col items-center justify-start pt-20 px-4 transition-all duration-300 opacity-0 pointer-events-none" id="search-modal">
+<button class="absolute top-6 right-6 p-2 text-white/70 hover:text-white transition-colors" id="close-search-modal">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<div class="w-full max-w-2xl">
+<h2 class="text-white text-2xl font-bold mb-8 text-center">Search our Collection</h2>
+<div class="relative">
+<span class="absolute inset-y-0 left-4 flex items-center text-primary">
+<span class="material-symbols-outlined text-2xl">search</span>
+</span>
+<input autofocus="" class="w-full bg-white/10 border-2 border-primary/30 rounded-2xl py-5 pl-14 pr-6 text-xl text-white placeholder-white/40 focus:outline-none focus:border-primary focus:ring-0 transition-all shadow-2xl shadow-primary/20" placeholder="What are you looking for?" type="text"/>
+</div>
+<div class="mt-8">
+<p class="text-white/40 text-sm mb-4">Popular Searches</p>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Diamond Rings</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Gold Bangles</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">New Arrivals</button>
+<button class="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/80 rounded-full text-sm transition-colors border border-white/10">Gift Sets</button>
+</div>
+</div>
+</div>
+</div><script>
+    const searchModal = document.getElementById('search-modal');
+    const openSearch = document.getElementById('mobile-search-trigger');
+    const closeSearch = document.getElementById('close-search-modal');
+
+    function toggleSearchModal() {
+        searchModal.classList.toggle('opacity-0');
+        searchModal.classList.toggle('pointer-events-none');
+        if (!searchModal.classList.contains('opacity-0')) {
+            searchModal.querySelector('input').focus();
+        }
+    }
+
+    openSearch.addEventListener('click', toggleSearchModal);
+    closeSearch.addEventListener('click', toggleSearchModal);
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('opacity-0')) {
+            toggleSearchModal();
+        }
+    });
+</script>
+</body></html>
